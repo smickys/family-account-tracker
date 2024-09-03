@@ -1,0 +1,40 @@
+GET http://localhost:16108/transactions/all/66817d32b4718d5533615b86
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2YyMGEzNzc0MDUyYzg0NmNhNGRlNSIsImlhdCI6MTcxOTYwNzQ1OSwiZXhwIjoxNzIyMTk5NDU5fQ.2ha8c6rTnHQSrKgpAI58UfRVVcKGueCwQYjaI3ymLl4
+
+###
+
+POST http://localhost:16108/transactions/create
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2YyMGEzNzc0MDUyYzg0NmNhNGRlNSIsImlhdCI6MTcxOTYwNzQ1OSwiZXhwIjoxNzIyMTk5NDU5fQ.2ha8c6rTnHQSrKgpAI58UfRVVcKGueCwQYjaI3ymLl4
+Content-Type: application/json
+
+{
+    "amount": 9.99,
+    "note": "",
+    "transaction_date": "2024-06-30 20:17:44",
+    "account": "66817d32b4718d5533615b86",
+    "category": "66817e1558841259931834dc"
+}
+
+###
+
+PUT http://localhost:16108/transactions/edit/6681934b3a3185b8d8f37f63
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2YyMGEzNzc0MDUyYzg0NmNhNGRlNSIsImlhdCI6MTcxOTYwNzQ1OSwiZXhwIjoxNzIyMTk5NDU5fQ.2ha8c6rTnHQSrKgpAI58UfRVVcKGueCwQYjaI3ymLl4
+Content-Type: application/json
+
+{
+    "amount": 10.99,
+    "note": "labas",
+    "transaction_date": "2024-06-30 20:17:44",
+    "account": "66817d32b4718d5533615b86",
+    "category": "66817e1558841259931834dc"
+}
+
+###
+
+PUT http://localhost:16108/transactions/undelete/66817d32b4718d5533615b86/668192c612ae2db804d3a4ff
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2YyMGEzNzc0MDUyYzg0NmNhNGRlNSIsImlhdCI6MTcxOTYwNzQ1OSwiZXhwIjoxNzIyMTk5NDU5fQ.2ha8c6rTnHQSrKgpAI58UfRVVcKGueCwQYjaI3ymLl4
+
+###
+
+DELETE http://localhost:16108/transactions/delete/66817d32b4718d5533615b86/668192c612ae2db804d3a4ff
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2YyMGEzNzc0MDUyYzg0NmNhNGRlNSIsImlhdCI6MTcxOTYwNzQ1OSwiZXhwIjoxNzIyMTk5NDU5fQ.2ha8c6rTnHQSrKgpAI58UfRVVcKGueCwQYjaI3ymLl4

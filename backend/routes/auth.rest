@@ -1,0 +1,23 @@
+POST http://localhost:16108/auth/register
+Content-Type: application/json
+
+{
+    "username": "user3",
+    "email": "user3@gmail.com",
+    "password": "user3"
+}
+
+###
+
+POST http://localhost:16108/auth/login
+Content-Type: application/json
+
+{
+    "username": "user1",
+    "password": "user1"
+}
+
+
+###
+
+GET http://localhost:16108/auth/all

@@ -1,0 +1,36 @@
+GET http://localhost:16108/categories/all/667f20f3774052c846ca4dec
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2YyMGEzNzc0MDUyYzg0NmNhNGRlNSIsImlhdCI6MTcxOTYwNzQ1OSwiZXhwIjoxNzIyMTk5NDU5fQ.2ha8c6rTnHQSrKgpAI58UfRVVcKGueCwQYjaI3ymLl4
+
+###
+
+POST http://localhost:16108/categories/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2YyMGEzNzc0MDUyYzg0NmNhNGRlNSIsImlhdCI6MTcxOTYwNzQ1OSwiZXhwIjoxNzIyMTk5NDU5fQ.2ha8c6rTnHQSrKgpAI58UfRVVcKGueCwQYjaI3ymLl4
+
+{
+    "name": "Paslaugos",
+    "description": "Internetas, mob. ryšys", 
+    "wallet": "667f20f3774052c846ca4dec"
+}
+
+###
+
+PUT http://localhost:16108/categories/edit/66817e1558841259931834dc
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2YyMGEzNzc0MDUyYzg0NmNhNGRlNSIsImlhdCI6MTcxOTYwNzQ1OSwiZXhwIjoxNzIyMTk5NDU5fQ.2ha8c6rTnHQSrKgpAI58UfRVVcKGueCwQYjaI3ymLl4
+
+{
+    "name": "Maistas ir ne tik",
+    "description": "Internetas, mob. ryšys", 
+    "wallet": "667f20f3774052c846ca4dec"
+}
+
+###
+
+PUT http://localhost:16108/categories/undelete/667f20f3774052c846ca4dec/66817e1558841259931834dc
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2YyMGEzNzc0MDUyYzg0NmNhNGRlNSIsImlhdCI6MTcxOTYwNzQ1OSwiZXhwIjoxNzIyMTk5NDU5fQ.2ha8c6rTnHQSrKgpAI58UfRVVcKGueCwQYjaI3ymLl4
+
+###
+
+DELETE http://localhost:16108/categories/delete/667f20f3774052c846ca4dec/66817e1558841259931834dc
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2YyMGEzNzc0MDUyYzg0NmNhNGRlNSIsImlhdCI6MTcxOTYwNzQ1OSwiZXhwIjoxNzIyMTk5NDU5fQ.2ha8c6rTnHQSrKgpAI58UfRVVcKGueCwQYjaI3ymLl4

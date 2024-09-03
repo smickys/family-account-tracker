@@ -1,0 +1,46 @@
+GET http://localhost:16108/accounts/all/6682571972b04342e5947cd7
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2YyMGEzNzc0MDUyYzg0NmNhNGRlNSIsImlhdCI6MTcxOTYwNzQ1OSwiZXhwIjoxNzIyMTk5NDU5fQ.2ha8c6rTnHQSrKgpAI58UfRVVcKGueCwQYjaI3ymLl4
+
+###
+
+GET http://localhost:16108/accounts/667f06cf0863b104be3c47d9
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2YyMGEzNzc0MDUyYzg0NmNhNGRlNSIsImlhdCI6MTcxOTYwNzQ1OSwiZXhwIjoxNzIyMTk5NDU5fQ.2ha8c6rTnHQSrKgpAI58UfRVVcKGueCwQYjaI3ymLl4
+
+###
+
+POST http://localhost:16108/accounts/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2YyMGEzNzc0MDUyYzg0NmNhNGRlNSIsImlhdCI6MTcxOTYwNzQ1OSwiZXhwIjoxNzIyMTk5NDU5fQ.2ha8c6rTnHQSrKgpAI58UfRVVcKGueCwQYjaI3ymLl4
+
+{
+    "wallet": "6682571972b04342e5947cd7",
+    "name": "Swed",
+    "start_balance": 108
+}
+
+###
+
+PUT http://localhost:16108/accounts/edit/667f10dd6719858d7c187795
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2YyMGEzNzc0MDUyYzg0NmNhNGRlNSIsImlhdCI6MTcxOTYwNzQ1OSwiZXhwIjoxNzIyMTk5NDU5fQ.2ha8c6rTnHQSrKgpAI58UfRVVcKGueCwQYjaI3ymLl4
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2U5OTMyMzRhNzE2MjgxMTdhZTM3ZSIsImlhdCI6MTcxOTYwMjI3NCwiZXhwIjoxNzIyMTk0Mjc0fQ._y4vDpHNm87yrVR_3-7Ow7JYEFpjyzSg9iECh0Jf0OA
+
+{
+    "wallet": "667f095ef450ff141cf33d31",
+    "name": "Sebb",
+    "start_balance": 1088
+}
+
+###
+
+PUT http://localhost:16108/accounts/undelete/66816a6a8cfcbe093e7afce9/66816f58a91bd22213abc708
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2YyMGEzNzc0MDUyYzg0NmNhNGRlNSIsImlhdCI6MTcxOTYwNzQ1OSwiZXhwIjoxNzIyMTk5NDU5fQ.2ha8c6rTnHQSrKgpAI58UfRVVcKGueCwQYjaI3ymLl4
+
+
+
+###
+
+DELETE http://localhost:16108/accounts/delete/66816a6a8cfcbe093e7afce9/66816f58a91bd22213abc708
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2YyMGEzNzc0MDUyYzg0NmNhNGRlNSIsImlhdCI6MTcxOTYwNzQ1OSwiZXhwIjoxNzIyMTk5NDU5fQ.2ha8c6rTnHQSrKgpAI58UfRVVcKGueCwQYjaI3ymLl4
+
+

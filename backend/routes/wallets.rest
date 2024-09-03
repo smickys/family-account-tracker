@@ -1,0 +1,65 @@
+GET http://localhost:16108/wallets/all
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2YyMGEzNzc0MDUyYzg0NmNhNGRlNSIsImlhdCI6MTcxOTYwNzQ1OSwiZXhwIjoxNzIyMTk5NDU5fQ.2ha8c6rTnHQSrKgpAI58UfRVVcKGueCwQYjaI3ymLl4
+
+###
+
+GET http://localhost:16108/wallets/667f095ef450ff141cf33d31
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2YyMGEzNzc0MDUyYzg0NmNhNGRlNSIsImlhdCI6MTcxOTYwNzQ1OSwiZXhwIjoxNzIyMTk5NDU5fQ.2ha8c6rTnHQSrKgpAI58UfRVVcKGueCwQYjaI3ymLl4
+
+###
+
+POST http://localhost:16108/wallets/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2YyMGEzNzc0MDUyYzg0NmNhNGRlNSIsImlhdCI6MTcxOTYwNzQ1OSwiZXhwIjoxNzIyMTk5NDU5fQ.2ha8c6rTnHQSrKgpAI58UfRVVcKGueCwQYjaI3ymLl4
+
+{
+    "name": "Piniginė 2" 
+}
+
+###
+
+POST http://localhost:16108/wallets/add-user/6682571972b04342e5947cd7
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2YyMGEzNzc0MDUyYzg0NmNhNGRlNSIsImlhdCI6MTcxOTYwNzQ1OSwiZXhwIjoxNzIyMTk5NDU5fQ.2ha8c6rTnHQSrKgpAI58UfRVVcKGueCwQYjaI3ymLl4
+
+{
+    "username": "user3",
+    "role": "Moderator"
+}
+
+### 
+
+PUT http://localhost:16108/wallets/edit/667eef85842b1b99d5350863
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2YyMGEzNzc0MDUyYzg0NmNhNGRlNSIsImlhdCI6MTcxOTYwNzQ1OSwiZXhwIjoxNzIyMTk5NDU5fQ.2ha8c6rTnHQSrKgpAI58UfRVVcKGueCwQYjaI3ymLl4
+
+{
+    "name": "Naujausia"
+}
+
+### 
+
+PUT http://localhost:16108/wallets/remove-user/6682571972b04342e5947cd7
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2YyMGEzNzc0MDUyYzg0NmNhNGRlNSIsImlhdCI6MTcxOTYwNzQ1OSwiZXhwIjoxNzIyMTk5NDU5fQ.2ha8c6rTnHQSrKgpAI58UfRVVcKGueCwQYjaI3ymLl4
+
+{
+    "user_id": "667f20a3774052c846ca4de5"
+}
+
+###
+
+PUT http://localhost:16108/wallets/undelete/66816a6a8cfcbe093e7afce9
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2YyMGEzNzc0MDUyYzg0NmNhNGRlNSIsImlhdCI6MTcxOTYwNzQ1OSwiZXhwIjoxNzIyMTk5NDU5fQ.2ha8c6rTnHQSrKgpAI58UfRVVcKGueCwQYjaI3ymLl4
+
+###
+
+DELETE http://localhost:16108/wallets/delete/668245fdaf175f4cb8d22d9a
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2YyMGEzNzc0MDUyYzg0NmNhNGRlNSIsImlhdCI6MTcxOTc5MTMzMiwiZXhwIjoxNzIyMzgzMzMyfQ.rLpwnChEyGJST9JbV2xKX_W-v6RkXrgZjdErTNObFlA
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2YyMGRkNzc0MDUyYzg0NmNhNGRlOCIsImlhdCI6MTcxOTc4MTczOCwiZXhwIjoxNzIyMzczNzM4fQ.ZUQHvr4TSDlzx2BWGOmK3zSHbKFxGA1va5vafCaYaNQ
+
+
+###
+
+# DELETE http://localhost:16108/wallets/delete/
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2YyMGEzNzc0MDUyYzg0NmNhNGRlNSIsImlhdCI6MTcxOTYwNzQ1OSwiZXhwIjoxNzIyMTk5NDU5fQ.2ha8c6rTnHQSrKgpAI58UfRVVcKGueCwQYjaI3ymLl4
